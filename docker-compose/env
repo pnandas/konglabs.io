@@ -1,0 +1,21 @@
+GRAFANA_DASHBOARD=http://ip10-0-0-4-c2cdvsu0ivn0hpdnsud0-10100.direct.j05.konglabs.io
+KEYCLOAK_CONFIG_ISSUER=http://ip10-0-0-4-c2cdvsu0ivn0hpdnsud0-8080.direct.j05.konglabs.io/auth/realms/master
+KEYCLOAK_IP=http://ip10-0-0-4-c2cdvsu0ivn0hpdnsud0-8080.direct.j05.konglabs.io
+KEYCLOAK_LOGOUT_REDIRECT_URI=https://konghq.com/
+KEYCLOAK_REDIRECT_URI=http://ip10-0-0-4-c2cdvsu0ivn0hpdnsud0-8000.direct.j05.konglabs.io
+KEYCLOAK_REDIRECT_URI_LOGOUT=http://ip10-0-0-4-c2cdvsu0ivn0hpdnsud0-8000.direct.j05.konglabs.io/logout
+# ifconfig en0 | grep -v inet6 | grep inet | awk '{print $2}'
+HOSTIP=192.168.1.124
+KIBANA=http://$HOSTIP:5601
+export KONG_8000=http://$HOSTIP:8000
+export KONG_8001=http://$HOSTIP:8001
+export KONG_8443=https://$HOSTIP:8443
+export KONG_8444=http://$HOSTIP:8444
+KONG_DEV_PORTAL_GUI=http://$HOSTIP:8003
+KONG_DISCOVERY=http://$HOSTIP:8001/openid-connect/issuers
+export KONG_GUI=http://$HOSTIP:8002
+export KONG_GUI_HTTP=Shttp://$HOSTIP:8445
+export KONG_LICENSE_DATA='{"license":{"version":1,"signature":"ac64ec4cdf7fbbc7c96bca3830f3b47a6a1651c90afb36a0ed67a5c476362565ff9bb4b275bea63a82f7e990449e06e563aa9c1a9c9f99f9edbcdeacb24b8ffd","payload":{"customer":"Kong Inc","license_creation_date":"2021-1-5","product_subscription":"Kong Enterprise Edition","support_plan":"None","admin_seats":"5","dataplanes":"0","license_expiration_date":"2021-07-04","license_key":"0011K000022IA3HQAW_a1V1K000007R36MUAS"}}}'
+export KONG_PORTAL_API_URL=http://$HOSTIP:8004
+export KONG_PORTAL_GUI_HOST=$HOSTIP:8003
+LAB=workshop_se
